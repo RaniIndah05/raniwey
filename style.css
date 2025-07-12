@@ -1,0 +1,77 @@
+/* Sweet Food Theme */
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom, #ffe6f0, #fff0f5);
+  color: #5c2a4a;
+  margin: 0;
+  padding: 0;
+}
+
+/* Judul utama */
+h1, h2 {
+  text-align: center;
+  color: #d94f70;
+  text-shadow: 1px 1px #fff;
+}
+
+/* Kontainer utama */
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff8f2;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+}
+
+/* Kartu makanan */
+.sweet-card {
+  background: #ffe9ec;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 192, 203, 0.3);
+}
+
+.sweet-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+}
+
+/* Gambar makanan */
+.sweet-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #fff;
+}
+
+/* Nama makanan */
+.sweet-card .info {
+  flex: 1;
+}
+
+.sweet-card .info h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #c94d7d;
+}
+
+.sweet-card .info
+.sweet-card .info h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #c94d7d;
+}
+
+.sweet-card .info p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #6b3e4f;
+}

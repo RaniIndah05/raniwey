@@ -1,27 +1,106 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Login - Toko Makanan Lezat</title>
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Registrasi - Makanan Manis</title>
+  <style>
+    body {
+      font-family: 'Georgia', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff0f5;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(255, 105, 180, 0.4);
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #d63384;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #8b008b;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #d8bfd8;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
+
+    .icon {
+      text-align: center;
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    .toggle {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .toggle a {
+      color: #d63384;
+      text-decoration: none;
+    }
+
+    .toggle a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="container">
-    <h2>🍰 Login Lezat 🍩</h2>
-    <form action="login_process.php" method="post">
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="Masukkan email">
-      </div>
-      <div class="form-group">
-        <label for="password">Kata Sandi</label>
-        <input type="password" id="password" name="password" required placeholder="Masukkan kata sandi">
-      </div>
+  <div class="container" id="loginForm">
+    <div class="icon">🍰</div>
+    <h2>Login Makanan Manis</h2>
+    <form>
+      <label for="loginEmail">Email</label>
+      <input type="email" id="loginEmail" placeholder="masukkan email" required />
+
+      <label for="loginPassword">Password</label>
+      <input type="password" id="loginPassword" placeholder="masukkan password" required />
+
       <button type="submit">Masuk</button>
     </form>
-    <p class="switch">Belum punya akun? <a href="register.html">Daftar sekarang</a></p>
+    <div class="toggle">
+      Belum punya akun? <a href="register.html">Daftar sekarang</a>
+    </div>
   </div>
-
-</body>
-</html>
+  </body>
+  </html>
